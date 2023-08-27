@@ -14,7 +14,6 @@ Este tip funciona para dar indicaciones al usuario de que debe hacer.
             left: calc(50% - 50px);
             opacity: .5;
             position: absolute;
-            top: calc(50% - 50px);
             transform-origin: bottom;
             width: 50px;
         }
