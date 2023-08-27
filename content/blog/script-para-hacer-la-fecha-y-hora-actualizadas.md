@@ -2,7 +2,9 @@
 title: Conoer la fecha y hora actual 	
 description: Así puedes obtener el DateTime con un simple script
 date: 2023-08-27
-draft: true
+tags:
+  - datetime
+  - basic
 ---
 <style>
         .container {
