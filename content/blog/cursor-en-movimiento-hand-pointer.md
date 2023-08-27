@@ -1,7 +1,7 @@
 ---
 title: Cursor en movimiento - hand pointer css
 description: Para dar indicaciones al usuario de que debe hacer. 
-date: 2023-25-08
+date: 2023-08-25
 tags:
   - ui
   - keyframes
