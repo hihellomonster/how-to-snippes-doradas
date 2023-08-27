@@ -3,8 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:type" content="website">
+    <meta property="og:type" content="club" />
+    <meta property="og:title" content="{{ title or metadata.title }}">   
+    <meta property="og:url" content="https://hihellomonster.github.io/">
+    <meta property="og:site_name" content="hihello.monster">
+
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
+	  <meta property='og:description content="{{ description or metadata.description }}">
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
