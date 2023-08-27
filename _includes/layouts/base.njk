@@ -1,7 +1,12 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
-	<head>
+<html lang="{{ metadata.language }}" Accept-Encoding="gzip">
+	<head>		
+		<title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+	  <meta property='og:description content="{{ description or metadata.description }}">
 		<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="es_MX">
     <meta property="og:type" content="website">
@@ -9,10 +14,12 @@
     <meta property="og:title" content="{{ title or metadata.title }}">   
     <meta property="og:url" content="https://hihellomonster.github.io/">
     <meta property="og:site_name" content="hihello.monster">
-
-		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
-	  <meta property='og:description content="{{ description or metadata.description }}">
+		<meta name="generator" content="{{ metadata.author.name }}">
+		<meta name="rights" content="{{ metadata.author.name }}">
+		<meta name="keywords" content="{{ tag }}">
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="{{ metadata.author.name }}">
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
